@@ -52,7 +52,7 @@
 
 <img width="1600" height="1091" alt="esp32-devkitC-v4-pinout" src="https://github.com/user-attachments/assets/50d1bd97-a435-4ff2-b974-ac339be4537a" />
 
-<img width="1600" height="1091" alt="esp32-devkitC-v4-modified-pinout" src="https://github.com/user-attachments/assets/bff52f79-5fa3-43fe-b8ca-118f1af7fe9c" />
+<img width="1600" height="1091" alt="552489636-bff52f79-5fa3-43fe-b8ca-118f1af7fe9c" src="https://github.com/user-attachments/assets/9bbcfae3-9f96-4aa0-8b4a-360a915e71ae" />
 
 ## Approximate Cost in REAL LIFE(Only Electronics):- 
 1. ESP32-DevKitC V4 x 2 = ₹756
@@ -68,6 +68,4 @@
 11. Other parts ≈ ₹600
     
     **Total:- ≈ ₹9,250**
-
-
 
