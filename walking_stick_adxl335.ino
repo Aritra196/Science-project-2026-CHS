@@ -2,29 +2,32 @@
 #define BLYNK_TEMPLATE_NAME "Science project 2026"
 #define BLYNK_AUTH_TOKEN "tmoubT4AhCYCm9SL--77ijyNDOaP5DkC"
 #include <BlynkSimpleEsp32.h>
-char ssid[] = "Wokwi-GUEST";
-char pass[] = "";
+char ssid[] = "Esp32Network";
+char pass[] = "scienceproject";
+int state=0,pm=0;
 void setup() {
-  //Serial.begin(9600);
-  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+ Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+ pm = millis();
 }
 
 void loop() {
-  int rax = analogRead(33);
-  int ray = analogRead(25);
-  int raz = analogRead(26);
+  int rax = analogRead(32);
+  int ray = analogRead(35);
+  int raz = analogRead(34);
   float ax = rax*3.3/4095.0;
   float ay = ray*3.3/4095.0;
   float az = raz*3.3/4095.0;
-  float pax = ax-1.65/0.3;
-  float pay = ay-1.65/0.3;
-  float paz = az-1.65/0.3;
-  //Serial.print(pax); Serial.print(" "); Serial.print(pay); Serial.print(" "); Serial.print(paz); Serial.print(" ");
-  //Serial.print(pgx); Serial.print(" "); Serial.print(pgy); Serial.print(" "); Serial.print(pgz);
-  //Serial.println("");
-  float A = sqrt(pax*pax + pay*pay + paz*paz);//Root Mean Square of processed value of acceleration along x,y and z axis
-  if(A<= 0.4 || A>=2.5)
+  float pax = (ax-1.5)/0.33;
+  float pay = (ay-1.5)/0.33;
+  float paz = (az-1.5)/0.33;
+  float A = sqrt(pax*pax + pay*pay + paz*paz);//Resultant acceleration{using vector addition}
+  if(A<= 0.4 || A>=2.5){
+    if((millis()-pm)>200){
       Blynk.logEvent("fall_alert");//Send Alert(Email alert) to Blynk
+      pm=millis();
+    }
+  }
+     
   Blynk.run();
-  delay(50);
+  delay(20);
 }
