@@ -56,17 +56,17 @@
 
 
 ## Approximate Cost in REAL LIFE(Only Electronics):- 
-1. ESP32-DevKitC V4 x 2 = ₹756
-2. DS18B20 Digital Temperature Sensor Probe x 1 = ₹72
-3. E18-D80NK Adjustable 3–80cm Infrared Proximity Sensor Switch x 8 = ₹1,176
-4. TowerPro MG995 Metal Gear Servo Motor (180° Rotation) x 3 = ₹909
-5. 6DOF BOSCH GY-BMI160 Module 6-axis Acceleration Gyro x 1 = ₹479
-6. KP 3.7 V DC 5000 mAh Lithium Polymer Rechargeable Battery, KP-654677 x 1 = ₹565
-7. TP5100 Lithium Battery Charging Module x 1 = ₹73
-8. 1W 45-50LM Red LED Beads x 3 = ₹45
-9. Wiring ≈ ₹4,000
-10. PCB ≈ ₹500
-11. Other parts ≈ ₹600
+1. ESP32-DevKitC V4 x 1 + ESP32-S3-DevKitC-N16R8 x 1 = ₹1227
+3. DS18B20 Digital Temperature Sensor Probe x 1 = ₹72
+4. E18-D80NK Adjustable 3–80cm Infrared Proximity Sensor Switch x 8 = ₹1,176
+5. TowerPro MG995 Metal Gear Servo Motor (180° Rotation) x 3 = ₹909
+6. 6DOF BOSCH GY-BMI160 Module 6-axis Acceleration Gyro x 1 = ₹479
+7. KP 3.7 V DC 5000 mAh Lithium Polymer Rechargeable Battery, KP-654677 x 1 = ₹565
+8. TP5100 Lithium Battery Charging Module x 1 = ₹73
+9. 1W 45-50LM Red LED Beads x 3 = ₹45
+10. Wiring ≈ ₹4,000
+11. PCB ≈ ₹500
+12. Other parts ≈ ₹600
     
-    **Total:- ≈ ₹9,250**
+    **Total:- ≈ ₹9,700**
 
